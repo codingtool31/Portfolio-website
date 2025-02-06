@@ -1,0 +1,129 @@
+/* .navbar{
+   
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+.navbar img{
+    max-width: 6%;
+}
+.nav-menu{
+    display:flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+.nav-connect{
+    padding: 20px 40px;
+    border-radius:50px;
+    background: linear-gradient(267deg, #f59a8a 0.36%, #e9ba44 102.06%);
+    font-size: 22px;
+    color: rgb(215, 61, 61);
+    font-weight: bold;
+    cursor: pointer;
+    transition:0.5;
+}
+.nav-connect:hover{
+    transform:scale(1.05);
+} */
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+    padding: 10px 20px;
+}
+
+.navbar img {
+    max-width: 6%;
+}
+
+/* Hide the logo on small screens */
+@media screen and (max-width: 768px) {
+    .navbar img {
+        display: none; /* Hides the logo */
+    }
+
+    .nav-connect {
+        display: none; /* Hides the "Connect with Me" button */
+    }
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.nav-connect {
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #f59a8a 0.36%, #e9ba44 102.06%);
+    font-size: 22px;
+    color: rgb(215, 61, 61);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        margin: 20px 40px;
+    }
+
+    .nav-menu {
+        gap: 40px;
+        font-size: 18px;
+    }
+
+    .nav-connect {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-menu {
+        gap: 25px;
+        font-size: 18px;
+    }
+
+    .nav-connect {
+        padding: 15px 30px;
+        font-size: 18px;
+        display: none; /* Hide the "Connect with Me" button on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .nav-connect {
+        padding: 10px 25px;
+        font-size: 16px;
+        display: none; /* Hide the "Connect with Me" button on very small screens */
+    }
+}

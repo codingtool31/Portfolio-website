@@ -1,0 +1,70 @@
+
+
+   .my-work {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .my-work h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+    justify-items: center;
+  }
+  
+  .project-item {
+    border: 1px solid #080707;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer; 
+  }
+  
+  .project-item img {
+   
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease; 
+  }
+  
+  .project-item p {
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  
+ 
+  .project-item img:hover {
+    transform: scale(1.1); 
+  }
+  
+ 
+  .zoomed-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+    cursor: pointer; 
+  }
+  
+  .zoomed-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    transition: transform 0.3s ease; 
+  }
+  
