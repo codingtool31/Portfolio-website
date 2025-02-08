@@ -11,7 +11,7 @@ import project8 from '../assets/WhatsApp Image 2025-01-31 at 09.12.41_40544050.j
 import { useState } from 'react';
 
 const MyWork = () => {
-  const [zoomedImage, setZoomedImage] = useState(null);  // state to track clicked image
+  const [zoomedImage, setZoomedImage] = useState(null);  
 
   const handleImageClick = (image) => {
     setZoomedImage(image);

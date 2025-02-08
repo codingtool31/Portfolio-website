@@ -1,5 +1,6 @@
 
 
+
    .my-work {
     text-align: center;
     margin: 20px;
@@ -24,15 +25,14 @@
     padding: 10px;
     border-radius: 8px;
     text-align: center;
-    cursor: pointer; 
+    cursor: pointer;
   }
   
   .project-item img {
-   
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
   }
   
   .project-item p {
@@ -41,30 +41,61 @@
     font-weight: 600;
   }
   
- 
   .project-item img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
   }
   
- 
+  
   .zoomed-modal {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.8); 
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; 
-    cursor: pointer; 
+    z-index: 1000;
+    cursor: pointer;
   }
   
   .zoomed-img {
     max-width: 90%;
     max-height: 90%;
     border-radius: 8px;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
+  }
+  
+ 
+  @media screen and (max-width: 1200px) {
+    .project-grid {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .project-grid {
+      grid-template-columns: 1fr; 
+      gap: 15px; 
+    }
+  
+    .project-item p {
+      font-size: 24px; 
+    }
+  
+    .my-work h1 {
+      font-size: 40px; 
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .my-work h1 {
+      font-size: 30px; 
+    }
+  
+    .project-item p {
+      font-size: 20px; 
+    }
   }
   
